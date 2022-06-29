@@ -17,4 +17,23 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <!--Error occurred during initialization of VM
+                            agent library failed to init: instrument
+                            Failed to find Premain-Class manifest attribute in
+                            把manifest.mf文件打入jar包中，否则会报上面的错误
+                         -->
+                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
