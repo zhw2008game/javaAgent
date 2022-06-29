@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Can-Redefine-Classes: true
 Can-Retransform-Classes: true
-Premain-Class: com.zhw.javaagent.MyAgent
+Premain-Class: com.zhw.javaagent.client.MyAgent

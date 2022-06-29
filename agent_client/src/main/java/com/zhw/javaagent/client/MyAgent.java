@@ -1,4 +1,4 @@
-package com.zhw.javaagent;
+package com.zhw.javaagent.client;
 
 import java.lang.instrument.Instrumentation;
 
