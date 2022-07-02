@@ -58,7 +58,7 @@ public class MyAgent {
                      * 在这一点上，可以假想我们所写的类与原始类实现了相同的接口，除此之外，全类名（包括包名）需和原始代码保持一致，
                      * 不然替换时就会抛出异常。
                      */
-                    String fileUrl = "D:\\javaWorkspace\\zhw\\javaAgent\\agent_client\\src\\main\\java\\org\\apache\\http\\client\\methods\\HttpGet.class";
+                    String fileUrl = "D:\\javaWorkspace\\gitHub\\javaAgent\\agent_client\\src\\main\\java\\org\\apache\\http\\client\\methods\\HttpGet.class";
                     InputStream fileInputStream = new FileInputStream(fileUrl);
                     byte[] bytes = new byte[fileInputStream.available()];
                     fileInputStream.read(bytes);
